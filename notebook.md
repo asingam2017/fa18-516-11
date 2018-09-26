@@ -14,3 +14,20 @@
 - Went through Cloud Computing Material
 - Started looking around (kaggle) for the project ideas
 
+## Week 4: 09/10 - 09/14
+- Continue reading Cloud Computing Material, mainly the difference between IaaS and PaaS
+- Selected Cloud Foundry as my contribution to the chapters
+
+## Week 5: 09/17 - 09/21
+- Reading and playing with Cloud Foundry as documenting my findings towards the chapter
+- Attended online class
+- Talked to Professor about my project idea - Converting images of Math equations to LaTex equations using Deep Learning - CNN and RNN networks.
+- Continue reading Cloud Computing concepts
+- Continue research on the project and playing with python deep learning libraries - keras and Tensorflow.
+
+## Week 3: 09/24 - 09/28
+- Completed the draft of Cloud Foundry MD file and requested professor to review it
+- Need to work on the topics - how to deploy Cloud Foundry onto public clouds: AWS and Azure
+
+## Week 3: 10/01 - 10/05
+
