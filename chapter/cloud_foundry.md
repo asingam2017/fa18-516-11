@@ -1,8 +1,7 @@
-# Cloud Foundry - Open Source PaaS Alternative
+# Cloud Foundry - Open Source PaaS Alternative :o: hid-missing
 
 Author: Murali Cheruvu
 
-*
 ## Introduction
 
 Te cloud computing brings needed agility, scalability, storage, pro-
@@ -38,10 +37,11 @@ ployment and support. To enable infrastructure-agnostic archi-
 tecture, Cloud Foundry focused on three main categories: *Clouds,
 Frameworks and Services* [@Badola2015].
 
-![Alt text](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS")
+![Cloud Foundry - Open Source PaaS [@Harris2011]](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS"){#fig:foundary}
 
-*Figure 1: Cloud Foundry - Open Source PaaS*
-[Source: @Harris2011]
+:o: +@fig:foundary shows that and that and the other. Figures must be
+mentioned, also see how you cite them here. Fix your other images
+
 
 ### Category: Clouds
 
