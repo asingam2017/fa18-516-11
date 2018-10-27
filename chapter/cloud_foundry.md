@@ -2,49 +2,28 @@
 
 Author: Murali Cheruvu
 
-## Table of Contents
-<!-- TOC -->
-
-- [Cloud Foundry - Open Source PaaS Alternative](#cloud-foundry---open-source-paas-alternative)
-    - [Table of Contents](#table-of-contents)
-    - [Introduction](#introduction)
-    - [Cloud Foundry Overview](#cloud-foundry-overview)
-        - [Category: Clouds](#category-clouds)
-        - [Category: Frameworks](#category-frameworks)
-        - [Category: Services](#category-services)
-    - [Key Components](#key-components)
-        - [Router](#router)
-        - [UAA and Login Server](#uaa-and-login-server)
-        - [Cloud Controller](#cloud-controller)
-        - [Execution and Storage](#execution-and-storage)
-        - [Service Brokers](#service-brokers)
-        - [Monitoring and Logging](#monitoring-and-logging)
-    - [Conclusion](#conclusion)
-    - [Acknowledgements](#acknowledgements)
-    - [References](#references)
-
-<!-- /TOC -->
+*
 ## Introduction
 
 Te cloud computing brings needed agility, scalability, storage, pro-
 cessing, global reach and reliability to sofware solutions. Tere
 are three popular models of cloud oferings: Sofware as a Service
-(**SaaS**), Platform as a Service (**PaaS**), and Infrastructure as a Service
-(**IaaS**). SaaS typically uses the internet to facilitate applications to
+(*SaaS*), Platform as a Service (*PaaS*), and Infrastructure as a Service
+(*IaaS*). SaaS typically uses the internet to facilitate applications to
 its users. Some of the popular SaaS Oferings are: Google Apps,
 Dropbox and Salesforce. IaaS provides all the infrastructure needs -
 scalable and automated computing resources like servers and net-
-working. Rackspace, AmazonWebServices(**AWS**),MicrosofAzure,
-Google Compute Engine (**GCE**) are some of the IaaS oferings. PaaS
+working. Rackspace, AmazonWebServices(*AWS*),MicrosofAzure,
+Google Compute Engine (*GCE*) are some of the IaaS oferings. PaaS
 provides all the needed infrastructure, services and tools so that
 developers can focus on cloud-native development with aspects
 like micro-services and exchanging messages between the domain
 services. Examples of PaaS are: Microsof Azure, Heroku and Open-
-Shif. **Cloud Foundry (CF)** is, an open source, Platform as a Service
+Shif. *Cloud Foundry (CF)* is, an open source, Platform as a Service
 (PaaS) available through a variety of private and public cloud dis-
 tributions, which is developed and operated by VMware and then
 transferred to Pivotal Sofware, a joint venture by EMC, VMware
-and General Electric. **Pivotal Cloud Foundry** is an alternative paid 
+and General Electric. *Pivotal Cloud Foundry* is an alternative paid 
 version with additional commercial features, support and documentation [@piv2018].
 
 ## Cloud Foundry Overview
@@ -56,20 +35,20 @@ nal systems. Cloud Foundry provides all the PaaS capabilities like
 the popular public and private PaaS Providers - built-in scalable
 infrastructure, middleware, and various tools for development, de-
 ployment and support. To enable infrastructure-agnostic archi-
-tecture, Cloud Foundry focused on three main categories: **Clouds,
-Frameworks and Services** [@Badola2015].
+tecture, Cloud Foundry focused on three main categories: *Clouds,
+Frameworks and Services* [@Badola2015].
 
 ![Alt text](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS")
 
-**Figure 1: Cloud Foundry - Open Source PaaS**
+*Figure 1: Cloud Foundry - Open Source PaaS*
 [Source: @Harris2011]
 
 ### Category: Clouds
 
 Public and private clouds have their advantages and disadvantages.
 While public clouds provide fexibility and faster deployments, private 
-clouds ofer operational efciency and total control. **Hybrid
-cloud approach** gives best of both public and private cloud oferings: 
+clouds ofer operational efciency and total control. *Hybrid
+cloud approach* gives best of both public and private cloud oferings: 
 infrastructure scalability, deployment and monitoring tools, data
 locality, industry regulations, zero-changes to the existing appli-
 cations or develop with cloud-native mindset - API Gateways in
@@ -81,7 +60,7 @@ like AWS, Azure, Google Cloud and OpenStack.
 
 ### Category: Frameworks
 
-Most of the cloud environments are **restricted to fewer frameworks**
+Most of the cloud environments are *restricted to fewer frameworks*
 and programming languages. Tough there is a good coverage
 of runtime environments and programming languages ofered by
 most of the public clouds including AWS and Azure, there are still
@@ -106,11 +85,11 @@ added later.
 
 Cloud Foundry comes with lots of ready-made components to sup-
 port all the key aspects of PaaS cloud computing in a scalable
-fashion [@Nimalsiri2016]. **Figure 2** is a good representation of the major components
+fashion [@Nimalsiri2016]. *Figure 2* is a good representation of the major components
 of Cloud Foundry:
 
 ![Alt text](images/Cloud-Foundry-arch.png?raw=true "Cloud Foundry Architecture")
-**Figure 2: Cloud Foundry Architecture**
+*Figure 2: Cloud Foundry Architecture*
 [Source: @cialisalto2018]
 
 ### Router
@@ -121,14 +100,14 @@ components. Routerconfgurationallowstohavenumberofrouters
 to enable proper load balancing and high availability of the cloud
 foundry environment. Each router maintains a dynamic route table
 with all details of the deployed applications. Gorouter interacts
-with Cloud Controller and Droplet Execution Agent (**DEA**) to fa-
+with Cloud Controller and Droplet Execution Agent (*DEA*) to fa-
 cilitate the updated routing information across the Cloud Foundry
 Environment. Router is implemented in Go programming language
 that can ofer optimal performance.
 
 ### UAA and Login Server
 
-User Account and Authentication (**UAA**) and Login Server compo-
+User Account and Authentication (*UAA*) and Login Server compo-
 nentsaretheidentitymanagementsysteminCloudFoundry. Cloud
 Foundry uses OAuth2 (Open Authorization) standards driven token-
 based authentication and authorization to manage user security
@@ -136,10 +115,10 @@ tokens.
 
 ### Cloud Controller
 
-We can think of Cloud Controller (**CC**) as the brain of Cloud Foundry
+We can think of Cloud Controller (*CC*) as the brain of Cloud Foundry
 Environment and the main responsibility of Cloud Controller is to
 manage the applications life cycle - deployment, application meta-
-data, staging and running the applications. CC uses **Diego Brain**,
+data, staging and running the applications. CC uses *Diego Brain*,
 CC-Bridge and Diego Cells to stage and run the applications. CC
 redirects the frst requests to the appropriate Droplet Execution
 Engine (DEA) available in the load balancing pool. CC user per-
@@ -150,7 +129,7 @@ maintained in Blob Store.
 
 ### Execution and Storage
 
-Droplet Execution Engine (**DEA**) is responsible for application de-
+Droplet Execution Engine (*DEA*) is responsible for application de-
 ployment and runtime management - selecting appropriate build-
 pack, stage the application and ensuring end-to-end life cycle man-
 agement of the application instance. Build packs are the scripts
@@ -158,28 +137,28 @@ to identify the required framework for applications to run prop-
 erly. Droplet is the unit of execution - deployed build pack of the
 application along with the application metadata. Wardens are con-
 tainers to host the droplets and isolate them in resource-controlled
-environments. **BOSH** is used as tool for release management of
+environments. *BOSH* is used as tool for release management of
 complex distributed systems.
 
 ### Service Brokers
 
 Most of the applications have aspects like interacting with database,
-sending messages using Service-Oriented Architecture (**SOA**) and
+sending messages using Service-Oriented Architecture (*SOA*) and
 interfacing third-party components. Services cannot directly inter-
 act with the applications given they run in the containers which are
 not persistent. Cloud Foundry uses service brokers in a decoupled
 fashion through which application developers can facilitate and use
-theservicesinapplications. Cloud Controller uses **NATS** based messaging system.
+theservicesinapplications. Cloud Controller uses *NATS* based messaging system.
 It uses a light-weight publish-subscribe mechanism to distribute
 the queued messages among applications.
 
 ### Monitoring and Logging
 
-CC provides various tools for continuous monitoring - **(a)** Health
+CC provides various tools for continuous monitoring - *(a)* Health
 Manager: Responsible for monitoring health of the application
-instances by interacting with DEA and CC, **(b)** Metric Collector:
+instances by interacting with DEA and CC, *(b)* Metric Collector:
 Gathers various application metrics from the running instances,
-and **(c)** Log Aggregator: Streams application logs. Developers and
+and *(c)* Log Aggregator: Streams application logs. Developers and
 support teams can access these logs and metrics to monitor, support
 and take necessary actions to keep systems up and running.
 
