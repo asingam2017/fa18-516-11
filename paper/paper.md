@@ -184,8 +184,4 @@ Foundry is seting the new standards for cloud computing with
 emphasis on scalability and industry best practices by promoting
 12-factor application development.
 
-## Acknowledgements
-
-Te author would like to thank Dr. Gregor von Laszewski and the
-Teaching Assistants for their support and valuable suggestions.
 
