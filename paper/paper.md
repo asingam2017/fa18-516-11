@@ -1,6 +1,12 @@
-# Cloud Foundry - Open Source PaaS Alternative :o: hid-missing
+# Cloud Foundry - Open Source PaaS Alternative :hand: hid-missing
 
 :o: format incorrect
+
+:o: no need for general intro to cloud 
+
+:o: focus on what Cloudfoundary does 
+
+:o: 
 
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/edit/master/paper/paper.md)
 
@@ -17,7 +23,7 @@ are three popular models of cloud oferings: Sofware as a Service
 its users. Some of the popular SaaS Oferings are: Google Apps,
 Dropbox and Salesforce. IaaS provides all the infrastructure needs -
 scalable and automated computing resources like servers and net-
-working. Rackspace, AmazonWebServices(*AWS*),MicrosofAzure,
+working. Rackspace, AmazonWebServices(*AWS*), MicrosofAzure,
 Google Compute Engine (*GCE*) are some of the IaaS oferings. PaaS
 provides all the needed infrastructure, services and tools so that
 developers can focus on cloud-native development with aspects
@@ -49,6 +55,8 @@ mentioned, also see how you cite them here. Fix your other images
 
 
 ### Category: Clouds
+
+:o: we recommend inverting the argumet. Write what cloudfoundary does and if explanations are needed for what they do do it afterwards or refer to the section in epub that explain them
 
 Public and private clouds have their advantages and disadvantages.
 While public clouds provide fexibility and faster deployments, private 
