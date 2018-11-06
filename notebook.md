@@ -25,9 +25,9 @@
 - Continue reading Cloud Computing concepts
 - Continue research on the project and playing with python deep learning libraries - keras and Tensorflow.
 
-## Week 3: 09/24 - 09/28
+## Week 6: 09/24 - 09/28
 - Completed the draft of Cloud Foundry MD file and requested professor to review it
 - Need to work on the topics - how to deploy Cloud Foundry onto public clouds: AWS and Azure
 
-## Week 3: 10/01 - 10/05
+## Week 7: 10/01 - 10/05
 
