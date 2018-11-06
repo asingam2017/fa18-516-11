@@ -21,12 +21,12 @@ an alternative paid version with additional commercial features, support and doc
 
 As opposed to most of the PaaS oferings in the market, which are
 *tied to proprietary implementations*, Cloud Foundry is an open
-source sofware with fexibility to allow integrations with exter-
-nal systems. Cloud Foundry provides all the PaaS capabilities like
+source sofware with fexibility to allow integrations with 
+external systems. Cloud Foundry provides all the PaaS capabilities like
 the popular public and private PaaS Providers - built-in scalable
 infrastructure, middleware, and various tools for development, de-
-ployment and support. To enable infrastructure-agnostic archi-
-tecture, Cloud Foundry focused on three main categories: *Clouds,
+ployment and support. To enable infrastructure-agnostic 
+architecture, Cloud Foundry focused on three main categories: *Clouds,
 Frameworks and Services* [@Badola2015].
 
 ![Cloud Foundry - Open Source PaaS [@Harris2011]](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS"){#fig:foundary}
