@@ -8,7 +8,7 @@
   
 ---
  
-Keywords: Cloud Foundry, Open Source, PaaS, IaaS
+Keywords: Cloud Foundry, Open Source, PaaS
  
 ---
 
