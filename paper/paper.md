@@ -30,6 +30,7 @@ architecture, Cloud Foundry focused on three main categories: *Clouds,
 Frameworks and Services* [@Badola2015].
 
 ![Alt text](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS")
+
 *Figure 1: Cloud Foundry Open Source PaaS*
 [Source: @Harris2011]
 
