@@ -24,8 +24,8 @@ As opposed to most of the PaaS oferings in the market, which are
 source sofware with fexibility to allow integrations with 
 external systems. Cloud Foundry provides all the PaaS capabilities like
 the popular public and private PaaS Providers - built-in scalable
-infrastructure, middleware, and various tools for development, de-
-ployment and support. To enable infrastructure-agnostic 
+infrastructure, middleware, and various tools for development, 
+deployment and support. To enable infrastructure-agnostic 
 architecture, Cloud Foundry focused on three main categories: *Clouds,
 Frameworks and Services* [@Badola2015].
 
@@ -47,8 +47,8 @@ While public clouds provide fexibility and faster deployments, private
 clouds ofer operational efciency and total control. *Hybrid
 cloud approach* gives best of both public and private cloud oferings: 
 infrastructure scalability, deployment and monitoring tools, data
-locality, industry regulations, zero-changes to the existing appli-
-cations or develop with cloud-native mindset - API Gateways in
+locality, industry regulations, zero-changes to the existing 
+applications or develop with cloud-native mindset - API Gateways in
 combination of Micro-Services. Cloud Foundry is an open PaaS
 with ability to extend and collaborate with other private and public
 cloud systems. It can co-exist with other PaaS and IaaS platforms,
@@ -80,8 +80,8 @@ added later.
 
 ## Key Components
 
-Cloud Foundry comes with lots of ready-made components to sup-
-port all the key aspects of PaaS cloud computing in a scalable
+Cloud Foundry comes with lots of ready-made components to 
+support all the key aspects of PaaS cloud computing in a scalable
 fashion [@Nimalsiri2016]. *Figure 2* is a good representation of the major components
 of Cloud Foundry:
 
@@ -97,15 +97,15 @@ components. Routerconfgurationallowstohavenumberofrouters
 to enable proper load balancing and high availability of the cloud
 foundry environment. Each router maintains a dynamic route table
 with all details of the deployed applications. Gorouter interacts
-with Cloud Controller and Droplet Execution Agent (*DEA*) to fa-
-cilitate the updated routing information across the Cloud Foundry
+with Cloud Controller and Droplet Execution Agent (*DEA*) to 
+facilitate the updated routing information across the Cloud Foundry
 Environment. Router is implemented in Go programming language
 that can ofer optimal performance.
 
 ### UAA and Login Server
 
-User Account and Authentication (*UAA*) and Login Server compo-
-nentsaretheidentitymanagementsysteminCloudFoundry. Cloud
+User Account and Authentication (*UAA*) and Login Server 
+components are the identity management system in CloudFoundry. Cloud
 Foundry uses OAuth2 (Open Authorization) standards driven token-
 based authentication and authorization to manage user security
 tokens.
@@ -114,26 +114,26 @@ tokens.
 
 We can think of Cloud Controller (*CC*) as the brain of Cloud Foundry
 Environment and the main responsibility of Cloud Controller is to
-manage the applications life cycle - deployment, application meta-
-data, staging and running the applications. CC uses *Diego Brain*,
+manage the applications life cycle - deployment, application 
+meta-data, staging and running the applications. CC uses *Diego Brain*,
 CC-Bridge and Diego Cells to stage and run the applications. CC
 redirects the frst requests to the appropriate Droplet Execution
-Engine (DEA) available in the load balancing pool. CC user per-
-missions are maintained at various levels - Orgs, Spaces and Roles
+Engine (DEA) available in the load balancing pool. CC user 
+permissions are maintained at various levels - Orgs, Spaces and Roles
 for greater scalability to the role-based access control. Application
 deployment artifacts - code packages, build-packs and droplets are
 maintained in Blob Store.
 
 ### Execution and Storage
 
-Droplet Execution Engine (*DEA*) is responsible for application de-
-ployment and runtime management - selecting appropriate build-
-pack, stage the application and ensuring end-to-end life cycle man-
-agement of the application instance. Build packs are the scripts
+Droplet Execution Engine (*DEA*) is responsible for application 
+deployment and runtime management - selecting appropriate build-
+pack, stage the application and ensuring end-to-end life cycle 
+management of the application instance. Build packs are the scripts
 to identify the required framework for applications to run prop-
 erly. Droplet is the unit of execution - deployed build pack of the
-application along with the application metadata. Wardens are con-
-tainers to host the droplets and isolate them in resource-controlled
+application along with the application metadata. Wardens are 
+containers to host the droplets and isolate them in resource-controlled
 environments. *BOSH* is used as tool for release management of
 complex distributed systems.
 
@@ -141,8 +141,8 @@ complex distributed systems.
 
 Most of the applications have aspects like interacting with database,
 sending messages using Service-Oriented Architecture (*SOA*) and
-interfacing third-party components. Services cannot directly inter-
-act with the applications given they run in the containers which are
+interfacing third-party components. Services cannot directly 
+interact with the applications given they run in the containers which are
 not persistent. Cloud Foundry uses service brokers in a decoupled
 fashion through which application developers can facilitate and use
 theservicesinapplications. Cloud Controller uses *NATS* based messaging system.
