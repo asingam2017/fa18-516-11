@@ -4,3 +4,12 @@ owner:
   lastname: "Cheruvu"
   hid: "fa18-516-11"
   community: "e516"
+  semester: "fa18"
+paper:
+    - title: Cloud Foundry - Open Source PaaS Alternative
+      keyword: Cloud Foundry
+      url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md         
+project:
+    - title: TBD
+      keyword: Cloud Computing
+      url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-paper/paper.md 
