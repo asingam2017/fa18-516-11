@@ -1,40 +1,16 @@
 # Cloud Foundry - Open Source PaaS Alternative :hand: fa18-516-11
-
-:o: format incorrect
-
-:o: no need for general intro to cloud 
-
-:o: focus on what Cloudfoundary does 
-
-:o: 
-
-| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/edit/master/paper/paper.md)
-
-
-Author: Murali Cheruvu
-
-## Introduction
-
-Te cloud computing brings needed agility, scalability, storage, pro-
-cessing, global reach and reliability to sofware solutions. Tere
-are three popular models of cloud oferings: Sofware as a Service
-(*SaaS*), Platform as a Service (*PaaS*), and Infrastructure as a Service
-(*IaaS*). SaaS typically uses the internet to facilitate applications to
-its users. Some of the popular SaaS Oferings are: Google Apps,
-Dropbox and Salesforce. IaaS provides all the infrastructure needs -
-scalable and automated computing resources like servers and net-
-working. Rackspace, AmazonWebServices(*AWS*), MicrosofAzure,
-Google Compute Engine (*GCE*) are some of the IaaS oferings. PaaS
-provides all the needed infrastructure, services and tools so that
-developers can focus on cloud-native development with aspects
-like micro-services and exchanging messages between the domain
-services. Examples of PaaS are: Microsof Azure, Heroku and Open-
-Shif. *Cloud Foundry (CF)* is, an open source, Platform as a Service
-(PaaS) available through a variety of private and public cloud dis-
-tributions, which is developed and operated by VMware and then
-transferred to Pivotal Sofware, a joint venture by EMC, VMware
-and General Electric. *Pivotal Cloud Foundry* is an alternative paid 
-version with additional commercial features, support and documentation [@piv2018].
+ 
+| Murali Cheruvu
+| mcheruvu@iu.edu
+| Indiana University
+| hid: fa18-516-11
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md)
+  
+---
+ 
+Keywords: Cloud Foundry, Open Source, PaaS, IaaS
+ 
+---
 
 ## Cloud Foundry Overview
 
@@ -183,5 +159,4 @@ for all the benefts of fexible open source PaaS oferings. Cloud
 Foundry is seting the new standards for cloud computing with
 emphasis on scalability and industry best practices by promoting
 12-factor application development.
-
 
