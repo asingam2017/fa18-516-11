@@ -13,6 +13,11 @@ Keywords: Cloud Foundry, Open Source, PaaS
 ---
 
 ## Cloud Foundry Overview
+Cloud Foundry (CF) is, an open source, Platform as a Service (PaaS) 
+available through a variety of private and public cloud distributions, 
+which is developed and operated by VMware and then transferred to Pivotal Software, 
+a joint venture by EMC, VMware and General Electric. Pivotal Cloud Foundry is 
+an alternative paid version with additional commercial features, support and documentation.
 
 As opposed to most of the PaaS oferings in the market, which are
 *tied to proprietary implementations*, Cloud Foundry is an open
