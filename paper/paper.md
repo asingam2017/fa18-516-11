@@ -34,13 +34,7 @@ Frameworks and Services* [@Badola2015].
 *Figure 1: Cloud Foundry Open Source PaaS*
 [Source: @Harris2011]
 
-:o: +@fig:foundary shows that and that and the other. Figures must be
-mentioned, also see how you cite them here. Fix your other images
-
-
 ### Category: Clouds
-
-:o: we recommend inverting the argumet. Write what cloudfoundary does and if explanations are needed for what they do do it afterwards or refer to the section in epub that explain them
 
 Public and private clouds have their advantages and disadvantages.
 While public clouds provide fexibility and faster deployments, private 
