@@ -26,13 +26,10 @@ external systems. Cloud Foundry provides all the PaaS capabilities like
 the popular public and private PaaS Providers - built-in scalable
 infrastructure, middleware, and various tools for development, 
 deployment and support. To enable infrastructure-agnostic 
-architecture, Cloud Foundry focused on three main categories: *Clouds,
+architecture, Cloud Foundry, as shown in +@fig:cf-open-paas focused on three main categories: *Clouds,
 Frameworks and Services* [@Badola2015].
 
-![Alt text](images/Cloud-Foundry-as-Open-PaaS.jpg?raw=true "Cloud Foundry - Open PaaS")
-
-*Figure 1: Cloud Foundry Open Source PaaS*
-[Source: @Harris2011]
+![Cloud Foundry - Open PaaS](images/Cloud-Foundry-as-Open-PaaS.jpg){#fig:cf-open-paas}
 
 ### Category: Clouds
 
@@ -76,12 +73,10 @@ added later.
 
 Cloud Foundry comes with lots of ready-made components to 
 support all the key aspects of PaaS cloud computing in a scalable
-fashion [@Nimalsiri2016]. *Figure 2* is a good representation of the major components
+fashion [@Nimalsiri2016]. +@fig:cf-arch is a good representation of the major components
 of Cloud Foundry:
 
-![Alt text](images/Cloud-Foundry-arch.png?raw=true "Cloud Foundry Architecture")
-*Figure 2: Cloud Foundry Architecture*
-[Source: @cialisalto2018]
+![Cloud Foundry Architecture](images/Cloud-Foundry-arch.png){#fig:cf-arch}
 
 ### Router
 
