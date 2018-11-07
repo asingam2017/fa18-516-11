@@ -8,6 +8,10 @@
 | section  | DevOp                                 |
 | keywords | DevOp, CI, CD, Continuous Improvement |
 
+:o: use italics eg one start not bf, should this text be in the book, I remember we had a devops section is that text enhancing it or is it different. ?
+
+
+
 Deploying enterprise applications has been always challenging. Without consistent and reliable processes and practices, 
 it would be impossible to track and measure the deployment artifacts – which code-files and configuration data have been 
 deployed to what servers and what level of unit and integration tests have been done among various components of the 
