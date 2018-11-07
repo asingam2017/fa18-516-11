@@ -149,12 +149,14 @@ and *(c)* Log Aggregator: Streams application logs. Developers and
 support teams can access these logs and metrics to monitor, support
 and take necessary actions to keep systems up and running.
 
-## Conclusion
+## Usage
 
-Lots of Fortune 500 companies from all over the world - various
+Quiet a few Fortune 500 companies and various
 industries and government organizations, rely on Cloud Foundry
 for all the benefts of fexible open source PaaS oferings. Cloud
-Foundry is seting the new standards for cloud computing with
+Foundry attempts to set new standards for cloud computing with
 emphasis on scalability and industry best practices by promoting
-12-factor application development.
+12-factor application development. :o: ref missing
+
+:o: refernces are missing to articles that say this, also there may be a reason that this could be outdated, how can we check?
 
