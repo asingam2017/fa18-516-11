@@ -5,6 +5,8 @@ owner:
   hid: "fa18-516-11"
   community: "e516"
   semester: "fa18"
+technologies:
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-monitoring.md 
 paper:
     - title: Cloud Foundry - Open Source PaaS Alternative
       keyword: Cloud Foundry
