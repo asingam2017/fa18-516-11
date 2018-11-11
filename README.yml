@@ -18,7 +18,7 @@ topic:
   - Keyword: DevOp, CI, CD, Amazon, AWS
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-aws.md 
 paper:
-    - title: Cloud Foundry - Open Source PaaS Alternative
+    - title: Cloud Foundry - Open Source PaaS
       keyword: Cloud Foundry
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md         
 project:
