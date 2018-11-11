@@ -30,16 +30,28 @@
 - Need to work on the topics - how to deploy Cloud Foundry onto public clouds: AWS and Azure
 
 ## Week 7: 10/01 - 10/05
+- Read Cloud DevOp Concepts - CI/CD pipelines, Infrastructure-as-Code and Continuous Improvement
+- Write Topic on DevOp -Conntinuous Improvement
 
 ## Week 8: 10/08 - 10/12
+- Learn Azure DevOp Tools - Azure Monitor and related tools
+- Write Topic on Azure DevOp Tools
 
 ## Week 9: 10/15 - 10/19
+- Learn AWS DevOp Tools
+- Write Topic on AWS DevOp Tools
 
 ## Week 10: 10/22 - 10/26
+- Learn Function-as-Service (FaaS) concepts
+- Play with Azure Functions using C# to write Web-hooks, timer/scheduler jobs, messaging events to event grid/hub
 
 ## Week 11: 10/29 - 11/02
+- Play with AWS Lambda
+- Deploy C# FaaS to AWS Lamdd
 
 ## Week 12: 11/05 - 11/09
+- Learn OpenFaaS - open source Function-as-service platform
+- Learn how to write/deploy python applications onto OpenFaaS
 
 ## Week 13: 11/12 - 11/16
 
