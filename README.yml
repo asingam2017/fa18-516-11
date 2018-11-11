@@ -5,13 +5,23 @@ owner:
   hid: "fa18-516-11"
   community: "e516"
   semester: "fa18"
-technologies:
-  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-monitoring.md 
+topic:
+  - title : DevOp - Continuous Improvement
+  - Keyword: DevOp, CI, CD, Continuous Improvement
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-ci.md 
+topic:
+  - title : DevOp - Azure Monitor
+  - Keyword: DevOp, CI, CD, Azure Monitor
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-azure-monitor.md 
+topic:
+  - title : DevOp - AWS
+  - Keyword: DevOp, CI, CD, Amazon, AWS
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-aws.md 
 paper:
     - title: Cloud Foundry - Open Source PaaS Alternative
       keyword: Cloud Foundry
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md         
 project:
-    - title: TBD
-      keyword: Cloud Computing
+    - title: Explore OpenFaaS on AWS and Azure AKS
+      keyword: Cloud Computing, FaaS, OpenFaaS, AWS, Azure
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-paper/paper.md 
