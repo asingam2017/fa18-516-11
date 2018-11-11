@@ -26,4 +26,5 @@ project:
     - title: Explore OpenFaaS on AWS and Azure AKS
       keyword: Cloud Computing, FaaS, OpenFaaS, AWS, Azure
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-paper/paper.md 
+      code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/paper.md 
      
