@@ -19,6 +19,7 @@ Explore creating micro-services using OpenFaaS that makes serverless functions s
 
 ## Introduction
 
+Goals of this project to learn how to create cloud-native micro-services using server-less concepts for better scalability and cheaper to maintain. Function-as-service (FaaS) methodology allows to decouple each functionality from the rest of the application, for better support, isolated deployment and scalability at each function level.  
 
 ## Requirements
 
