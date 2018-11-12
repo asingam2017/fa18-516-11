@@ -9,19 +9,19 @@ owner:
 topic:
   - title : DevOp - Continuous Improvement
   - Keyword: DevOp, CI, CD, Continuous Improvement
-  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-ci.md 
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-ci.md 
 topic:
   - title : DevOp - Azure Monitor
   - Keyword: DevOp, CI, CD, Azure Monitor
-  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-azure-monitor.md 
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-azure-monitor.md 
 topic:
   - title : DevOp - AWS
   - Keyword: DevOp, CI, CD, Amazon, AWS
-  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/devop-aws.md 
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/cloud/cloud_foundry.md
 paper:
     - title: Cloud Foundry - Open Source PaaS
       keyword: Cloud Foundry
-      url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md         
+      url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-aws.md       
 project:
     - title: Explore OpenFaaS on AWS and Azure AKS
       keyword: Cloud Computing, FaaS, OpenFaaS, AWS, Azure
