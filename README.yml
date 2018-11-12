@@ -6,19 +6,19 @@ owner:
   community: "e516"
   semester: "fa18"
   weekly-log: https://github.com/cloudmesh-community/fa18-516-11/blob/master/notebook.md
-topic:
+section:
   - title : DevOp - Continuous Improvement
   - Keyword: DevOp, CI, CD, Continuous Improvement
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-ci.md 
-topic:
+section:
   - title : DevOp - Azure Monitor
   - Keyword: DevOp, CI, CD, Azure Monitor
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-azure-monitor.md 
-topic:
+section:
   - title : DevOp - AWS
   - Keyword: DevOp, CI, CD, Amazon, AWS
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/cloud/cloud_foundry.md
-paper:
+chapter:
     - title: Cloud Foundry - Open Source PaaS
       keyword: Cloud Foundry
       url: https://github.com/cloudmesh/technologies/blob/master/chapters/devops/devop-aws.md       
