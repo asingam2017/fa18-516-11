@@ -1,4 +1,4 @@
- # Explore OpenFaaS on AWS and Azure AKS :hand: fa18-516-11
+ # Explore OpenFaaS  Development and Deployment Aspects:hand: fa18-516-11
 
 | Murali Cheruvu
 | mcheruvu@iu.edu
