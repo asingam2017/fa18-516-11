@@ -1,4 +1,4 @@
-# Cloud Foundry - Open Source PaaS :hand: fa18-516-11
+# Cloud Foundry - Open Source PaaS :wave: :exclamation: fa18-516-11
  
 | Murali Cheruvu
 | mcheruvu@iu.edu
