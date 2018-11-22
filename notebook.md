@@ -52,11 +52,20 @@
 ## Week 12: 11/05 - 11/09
 - Learn OpenFaaS - open source Function-as-service platform
 - Learn how to write/deploy python applications onto OpenFaaS
+- Continue the project report
 
 ## Week 13: 11/12 - 11/16
+- Work on the project using Machine Learning - CNN Algorithm for image classification
+- Work on OpenFaaS function to classify the uploaded image using the model that has been created (a-head of the time)
+- Continue the project report
 
 ## Week 14: 11/19 - 11/23
+- Compplete the project end-to-end using OpenFaaS, Docker Container to create, test, deploy and test the deployed package
+- Implement couple of FaaS functions
+- Deploy to Azure and test it there
+- Continue the project report
 
 ## Week 15: 11/26 - 11/30
+ - Make necessary changes to the project and/or project report based on the feedback from Professor and/or TA
 
 
