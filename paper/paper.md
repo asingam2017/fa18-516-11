@@ -8,6 +8,8 @@
   
 :o: citations in captions missing
 
+:o: conlusion reads like advertisement. I am wondering if the conclusion needs to focus on technical issue. Maybe it actually needs to go in the introduction and the conclusion may need to be deleted. However, if used, you may want to rethink the advertisement aspect that this conclusion seems to reflect.
+
 ---
  
 Keywords: Cloud Foundry, Open Source, PaaS
@@ -15,6 +17,7 @@ Keywords: Cloud Foundry, Open Source, PaaS
 ---
 
 ## Cloud Foundry Overview
+
 Cloud Foundry (CF) is, an open source, Platform as a Service (PaaS) 
 available through a variety of private and public cloud distributions, 
 which is developed and operated by VMware and then transferred to Pivotal Software, 
