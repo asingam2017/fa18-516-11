@@ -25,7 +25,7 @@ chapter:
       
 project:
     - title: Explore OpenFaaS Development and Deployment Aspects
-      keyword: Cloud Computing, FaaS, OpenFaaS, AWS, Azure
+      keyword: OpenFaaS, Serverless, Micro-Services, Function-as-a-service (FaaS)
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-paper/paper.md 
       code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/paper.md 
      
