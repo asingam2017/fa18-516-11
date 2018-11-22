@@ -6,7 +6,7 @@
 | hid: fa18-516-11
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md)
   
-:o: citations in captions missing
+:o: citations in captions missing (as is now = plagarizm if ciation is not added)
 
 :o: conlusion reads like advertisement. I am wondering if the conclusion needs to focus on technical issue. Maybe it actually needs to go in the introduction and the conclusion may need to be deleted. However, if used, you may want to rethink the advertisement aspect that this conclusion seems to reflect.
 
