@@ -24,7 +24,7 @@ chapter:
     - url: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/cloud_foundry.md
       
 project:
-    - title: Explore OpenFaaS  Development and Deployment Aspects
+    - title: Explore OpenFaaS Development and Deployment Aspects
       keyword: Cloud Computing, FaaS, OpenFaaS, AWS, Azure
       url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-paper/paper.md 
       code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/paper.md 
