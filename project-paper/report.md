@@ -43,6 +43,8 @@ OpenFaaS (Functions as a Service) is a framework for creating micro-services tha
 
 ## Requirements
 
+This project has two goals - (1) How to deploy machine learning algorithm to production and make it to work as serverless function to get best scalability and (2) Explore OpenFaaS and related tools to develop, test and deploy onto public cloud providers such as Azure, AWS and Google Cloud.
+
 High level requirements include: setting up OpenFaaS locally within the development environment in Windows and also create deployable aspects: containerized OpenFaaS to be able to deploy to public cloud offerings including AWS, Azure and Google Cloud. Create python based project exploring high level concepts of serverless/micro-services for web. Explore container features in the process. 
 
 * Development Environment: Windows 10 Enterprise
@@ -58,7 +60,7 @@ High level requirements include: setting up OpenFaaS locally within the developm
 
 ## Design 
 
-Create image object detection and classification model using Convolutional Neural Network by exploring very small number of training examples, from the dataset of 20,000 images of dogs and cats, using Python libraries such as Keras and Tensorflow. We will train the small neural network as a baseline and apply fine-tuning of an existing pre-trained network provided by popular ResNet image network [@chollet_2016]. We will provide some background on the concepts of neural network to understand the project domain.
+Create image object detection and classification model using Convolutional Neural Network by exploring very small number of training examples, from the dataset of 20,000 images of dogs and cats, using Python libraries such as Keras and Tensorflow. We will train the small neural network as a baseline and apply fine-tuning of an existing pre-trained network provided by popular VGGNet image network [@chollet_2016]. We will provide some background on the concepts of neural network to understand the project domain.
 
 ### Neural Network
 
@@ -130,7 +132,7 @@ Convolution Neural Network has two key components: (a) feature extraction - in t
 ## Architecture
 
 Computer vision is an interdisciplinary field that deals with how computers can be made for
-gaining high-level understanding from digital images or videos. Images are treated as a matrix of pixel values. By applying convolutional, mathematical operation, features such as edges, brightness or blur can be extracted as feature maps from the images. This process goes through series of convolutions followed by pooling to reduce the size the of the images for further processing. In the end, various features of the image are flattened into vector and create deep neural network to classify the image, in our case, whether it is a dog or cat. VGG Net is very popular image network that reduced the errors in the image classification and improved the processing performance from the predecessor image network models. We will create our based neural network model using a small sample dataset of 2000 images from the given 20,000 images and apply this on top of the pre-trained model that is optimized based on ResNet net algorithm. So that our effort is incremental and minimal.
+gaining high-level understanding from digital images or videos. Images are treated as a matrix of pixel values. By applying convolutional, mathematical operation, features such as edges, brightness or blur can be extracted as feature maps from the images. This process goes through series of convolutions followed by pooling to reduce the size the of the images for further processing. In the end, various features of the image are flattened into vector and create deep neural network to classify the image, in our case, whether it is a dog or cat. VGGNet is very popular image network that reduced the errors in the image classification and improved the processing performance from the predecessor image network models. We will create our based neural network model using a small sample dataset of 2000 images from the given 20,000 images and apply this on top of the pre-trained model that is optimized based on VGGNet algorithm. So that our effort is incremental and minimal.
 
 
 ## Dataset
@@ -167,11 +169,15 @@ Following are the steps used to install Python libraries:
 
 ### Project Files
 
-### Deployment Instructions
-
-## Benchmark
-
-Using pre-trained VGG Net, we have achieved about 92% of the accuracy. With this accuracy and classifying an image uploaded through OpenFaaS function can be not only faster but also be as accurate as possible. 
+|  File             | Description                           |
+| --------          | ------------------------------------- |
+| readme.md         | Instructions on how to deploy and use OpenFaaS Serverless Functions.   | 
+| docker_image      | Docker Image file that can be deployed onto typical public cloud providers: Azure, AWS, Google Cloud.  
+|  resnet_pretrained_classify | OpenFaaS serverless function folder with related files to classify the uploaded animal image using ResNet image network pre-trained model using Keras and Tensorflow libraries. The classification happens very quick, hence qualifies to be a serverless function. |
+|  vggnet_pretrained_classify | OpenFaaS serverless function with related files) to classify the uploaded dog or cat image using our custom modeling on top of VGGNet image network pre-trained model using Keras and Tensorflow libraries. The classification also happens very quick, hence qualifies to be a serverless function. Sample images are provided for testing. |
+|  openfaas_functions.yml | Deployment Catalog for openfaas functions.  |
+|  image_classifier_dogsandcats.ipynb | Jupypter notebook with detailed analysis and exploration of Convolutional Neural Network to train the model using about 20,000 images of dogs and cats. The saved model will be used in the OpenFaaS function to test the classification of the uploaded image. Python uses Keras and Tensorflow Neural Network to perform the modeling.|
+|  classify_pre_trained_model.ipynb | Jupypter notebook to classify image of an animal using ResNet50 pre-trained model through Keras and Tensorflow. |
 
 ## Conclusion
 
