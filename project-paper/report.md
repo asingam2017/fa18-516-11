@@ -37,10 +37,9 @@ Serverless is the new methodology that cloud providers such as AWS, Azure or Goo
 
 ### OpenFaaS
 
-> "OpenFaaS (Functions as a Service) is a framework for building serverless functions with Docker  and Kubernetes which has first class support for metrics. Any process can be packaged as a  function enabling you to consume a range of web events without repetitive boiler-plate coding" [@openfaas_intro]. OpenFaaS can easily deployed into all the popular public cloud providers such as AWS, Azure and Google Cloud.
+OpenFaaS (Functions as a Service) is a framework for creating micro-services that can be hosted in containers like Docker or Kubernetes and make these services ready to be served in a serverless fashion [@openfaas_intro]. OpenFaaS can easily deployed into all the popular public cloud providers such as AWS, Azure and Google Cloud.
 
-![OpenFaaS Architecture](images/open-faas.png){#fig:openfaas_pic}
-
+![@openfaas_pic](images/open-faas.png){#fig:OpenFaaS}
 
 ## Requirements
 
