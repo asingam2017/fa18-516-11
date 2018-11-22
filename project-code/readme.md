@@ -48,6 +48,7 @@ If there are any issues with the docker and/or OpenFaaS functions, we can reset 
 
 ```
 docker build -t docker-img-faas-function .
+Note: we will need to be in the OpenFaaS function parent fodler where dockerfile exists
 ```
 
 ## Deploy Docker Container Image with our OpenFaaS Function
