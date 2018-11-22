@@ -1,4 +1,4 @@
- # Explore OpenFaaS  Development and Deployment Aspects:hand: fa18-516-11
+ # Explore OpenFaaS Development and Deployment Aspects:hand: fa18-516-11
 
 | Murali Cheruvu
 | mcheruvu@iu.edu
@@ -37,7 +37,7 @@ Serverless is the new methodology that cloud providers such as AWS, Azure or Goo
 
 ### OpenFaaS
 
-> OpenFaaS (Functions as a Service) is a framework for building serverless functions with Docker  and Kubernetes which has first class support for metrics. Any process can be packaged as a  function enabling you to consume a range of web events without repetitive boiler-plate coding [@openfaas_intro]. OpenFaaS can easily deployed into all the popular public cloud providers such as AWS, Azure and Google Cloud.
+> "OpenFaaS (Functions as a Service) is a framework for building serverless functions with Docker  and Kubernetes which has first class support for metrics. Any process can be packaged as a  function enabling you to consume a range of web events without repetitive boiler-plate coding" [@openfaas_intro]. OpenFaaS can easily deployed into all the popular public cloud providers such as AWS, Azure and Google Cloud.
 
 ![OpenFaaS Architecture](images/open-faas.png){#fig:openfaas_pic}
 
@@ -76,7 +76,7 @@ is, a directed graph, organized by layers and layers are created by
 number of interconnected neurons (or nodes). Every neuron in a
 layer is connected with all the neurons from the previous layer;
 there will be no interaction of neurons within a layer. As shown
-in +@fig:Goodfellow2016, a typical Neural Network contains three layers: input
+in +@fig:NeuralNetwork, a typical Neural Network contains three layers: input
 (left), hidden (middle) and output (right) [@Goodfellow2016]. The middle layer is
 called hidden only because the neurons of this layer are neither the
 input nor the output. However, the actual processing happens in the
@@ -92,7 +92,7 @@ certain weights to the input parameters. Back-propagation method
 minimizes the error in the weights by applying an algorithm called
 gradient descent at each iteration step.
 
-![Neural Network](images/neuralnetwork.png){#fig:Goodfellow2016}
+![@Goodfellow2016](images/neuralnetwork.png){#fig:NeuralNetwork}
 
 ### Deep Neural Network
 
@@ -109,7 +109,7 @@ functions at each layer parameterized by input weights. For it to be
 effective, the cost function of the neural network must guarantee
 two mathematical properties: continuity and differentiability.
 
-![Deep Neural Network](images/deepnetwork.png){#fig:Goodfellow2016}
+![@Goodfellow2016](images/deepnetwork.png){#fig:DeepNeuralNetwork}
 
 ### Convolutional Neural Network (CNN)
 
@@ -126,7 +126,7 @@ CNNs are constrained by fixed-size vectorized inputs and outputs.
 
 Convolution Neural Network has two key components: (a) feature extraction - in this component, the network performs a series of convolutions (mathematical operation) and pooling operations to create the feature-maps, the list of features from the images. (b) classification - fully connected layers will serve as a classifier on top of these extracted features. They will assign probability for the object on the image being what the algorithm predicts it is. 
 
-![CNN](images/cnn.png){#fig:Chang2016}
+![@Chang2016](images/cnn.png){#fig:CNN}
 
 ## Architecture
 
