@@ -3,6 +3,9 @@ owner:
   firstname: "Murali"
   lastname: "Cheruvu"
   hid: "fa18-516-11"
+  firstname: "Anand"
+  lastname: "Sriramulu"
+  hid: "fa18-516-23"
   community: "e516"
   semester: "fa18"
   weekly-log: https://github.com/cloudmesh-community/fa18-516-11/blob/master/notebook.md
