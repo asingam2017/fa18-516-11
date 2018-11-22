@@ -20,7 +20,7 @@ faas-cli deploy -f openfaas_functions.yml
 
 ```
 curl -X POST -H  \
-  --data-binary @data/cat.png \
+  --data-binary @data/tiger.png \
   "http://127.0.0.1:8080/function/vggnet_predefined_classify" 
 ```  
 
