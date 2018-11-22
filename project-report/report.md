@@ -172,10 +172,9 @@ Following are the steps used to install Python libraries:
 |  File             | Description                           |
 | --------          | ------------------------------------- |
 | readme.md         | Instructions on how to deploy and use OpenFaaS Serverless Functions.   | 
-| docker_image      | Docker Image file that can be deployed onto typical public cloud providers: Azure, AWS, Google Cloud.  
+| Dockerfile      | Docker Image file with our OpenFaaS function and all the python dependencies that can be deployed onto typical public cloud providers: Azure, AWS, Google Cloud.  
 |  resnet_pretrained_classify | OpenFaaS serverless function folder with related files to classify the uploaded animal image using ResNet image network pre-trained model using Keras and Tensorflow libraries. The classification happens very quick, hence qualifies to be a serverless function. |
-|  vggnet_pretrained_classify | OpenFaaS serverless function folder with related files to classify the uploaded dog or cat image using our custom modeling on top of VGGNet image network pre-trained model using Keras and Tensorflow libraries. The classification also happens very quick, hence qualifies to be a serverless function. Sample images are provided for testing. |
-|  openfaas_functions.yml | Deployment Catalog for openfaas functions.  |
+|  index.py | Entry python file to call in the docker image.  |
 |  image_classifier_dogsandcats.ipynb | Jupypter notebook with detailed analysis and exploration of Convolutional Neural Network to train the model using about 20,000 images of dogs and cats. The saved model will be used in the OpenFaaS function to test the classification of the uploaded image. Python uses Keras and Tensorflow Neural Network to perform the modeling.|
 |  classify_pre_trained_model.ipynb | Jupypter notebook to classify image of an animal using ResNet50 pre-trained model through Keras and Tensorflow. |
 
@@ -185,8 +184,8 @@ OpenFaaS facilitates clean design, development, deployment and support of the fu
 
 ## Team Members and Work Breakdown
 
-* Murali Cheruvu worked on the CNN, One OpenFaaS function, Docker Image and Deploying Azure (Single-Node Cluster)
-* Anand Sriramulu worked on one OpenFaaS function, Docker Image and Deploying to Raspberry Pi (Multi-Node Cluster)
+* Murali Cheruvu worked on the CNN, OpenFaaS function, Docker Image and Deploying Azure (Single-Node Cluster)
+* Anand Sriramulu worked on OpenFaaS function, Docker Image and Deploying to Raspberry Pi (Multi-Node Cluster)
 
 ## Acknowledgement
 
