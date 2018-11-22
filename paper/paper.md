@@ -6,6 +6,8 @@
 | hid: fa18-516-11
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/blob/master/paper/paper.md)
   
+:o: citations in captions missing
+
 ---
  
 Keywords: Cloud Foundry, Open Source, PaaS
