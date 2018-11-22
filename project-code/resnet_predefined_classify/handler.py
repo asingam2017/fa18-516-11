@@ -4,9 +4,8 @@ from keras.applications.resnet50 import preprocess_input, decode_predictions
 import numpy as np
 import os
 
-def predict_img(model, imgPath):  
-  
-    img = image.load_img(imgPath, target_size=(224, 224))
+def predict_img(model, img):  
+     
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
@@ -22,6 +21,11 @@ def handle(req):
     Args:
         req (str): request body
     """
+
+    image = Image.open(BytesIO(req)).convert('RGB')
+    im_width, im_height = 150, 150
+    image = image.resize((im_width, im_height), Image.ANTIALIAS)
+   
     model = ResNet50(weights='imagenet')
 
 	#dirname = os.path.dirname(__file__)
@@ -30,8 +34,6 @@ def handle(req):
 	
     print('img file path: ' + path)
 
-    ouput = predict_img(model, path)
+    ouput = predict_img(model, image)
 	
     return ouput
-    
-handle(None)
