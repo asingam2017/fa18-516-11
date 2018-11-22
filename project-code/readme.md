@@ -64,6 +64,10 @@ curl -X POST -H  \
   "http://127.0.0.1:8080/function/fass-function" 
 ```  
 
+### Push Our Docker Container Image with OpenFaaS Function
+
+* **Step 1:** Create a tag for our docker image using: **docker tag {img_name} {your_docker_hub_account_name}/{img_name}**
+* **Step 2:** Run **docker push your_docker_hub_account_name}/{img_name}**
 
 
 
