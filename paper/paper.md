@@ -10,6 +10,8 @@
 
 :o: conlusion reads like advertisement. I am wondering if the conclusion needs to focus on technical issue. Maybe it actually needs to go in the introduction and the conclusion may need to be deleted. However, if used, you may want to rethink the advertisement aspect that this conclusion seems to reflect.
 
+:o: 12-factor application development is not explained, thus the conclusion can not be understood.
+
 ---
  
 Keywords: Cloud Foundry, Open Source, PaaS
