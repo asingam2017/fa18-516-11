@@ -93,7 +93,7 @@ certain weights to the input parameters. Back-propagation method
 minimizes the error in the weights by applying an algorithm called
 gradient descent at each iteration step.
 
-![@Goodfellow2016](images/neuralnetwork.png){#fig:NeuralNetwork}
+![Neural Network [@Goodfellow2016]](images/neuralnetwork.png){#fig:NeuralNetwork}
 
 ### Deep Neural Network
 
@@ -110,7 +110,7 @@ functions at each layer parameterized by input weights. For it to be
 effective, the cost function of the neural network must guarantee
 two mathematical properties: continuity and differentiability.
 
-![@Goodfellow2016](images/deepnetwork.png){#fig:DeepNeuralNetwork}
+![Deep Neural Network [@Goodfellow2016]](images/deepnetwork.png){#fig:DeepNeuralNetwork}
 
 ### Convolutional Neural Network (CNN)
 
@@ -127,7 +127,7 @@ CNNs are constrained by fixed-size vectorized inputs and outputs.
 
 Convolution Neural Network has two key components: (a) feature extraction - in this component, the network performs a series of convolutions (mathematical operation) and pooling operations to create the feature-maps, the list of features from the images. (b) classification - fully connected layers will serve as a classifier on top of these extracted features. They will assign probability for the object on the image being what the algorithm predicts it is. 
 
-![@Chang2016](images/cnn.png){#fig:CNN}
+![Convolutional Neural Network (CNN) [@Chang2016]](images/cnn.png){#fig:CNN}
 
 ## Architecture
 
@@ -164,7 +164,7 @@ Following are the steps used to install Python libraries:
 * Install latest Anaconda for Windows 64-bit for Python 3
 * Once Anaconda installed, use the Anaconda command prompt, to install Tensorflow and Keras
 * We can add Python exe folder into windows system environment path variable, so that we can use python from the regular command prompt
-* We can install Jupyter Notebook as well, given we are using jupyter notebook to write the CNN algorithm for the image classification
+* We can install Jupyter Notebook as well, given we are using Jupyter notebook to write the CNN algorithm for the image classification
 * Detailed steps are provided in the installation/deployment instructions
 
 ### Project Files
@@ -182,6 +182,11 @@ Following are the steps used to install Python libraries:
 ## Conclusion
 
 OpenFaaS facilitates clean design, development, deployment and support of the function-as-a-service (micro-services) implementations. OpenFaaS creates co-opetitive (co-operation and competition) environment with public cloud providers. With all the needed built-in methodologies - API Gateway, FaaS, etc. and tools - security, logging, integrations with DevOp tools, etc., OpenFaaS is already a very good open source alternative for building micro-services and maturity of this framework is drastically increasing with growing usage community and adoption. OpenFaaS can be helpful to host variety of FaaS functions all the way from http-based functions to complex functions such as machine learning based predictions and classifications. 
+
+## Team Members and Work Breakdown
+
+Murali Cheruvu, worked on the CNN, One OpenFaaS function, Docker Image and Deploying Azure (Single-Node Cluster)
+Anand Sriramulu worked on one OpenFaaS function, Docker Image and Deploying to Raspberry Pi (Multi-Node Cluster)
 
 ## Acknowledgement
 
