@@ -185,8 +185,8 @@ OpenFaaS facilitates clean design, development, deployment and support of the fu
 
 ## Team Members and Work Breakdown
 
-Murali Cheruvu, worked on the CNN, One OpenFaaS function, Docker Image and Deploying Azure (Single-Node Cluster)
-Anand Sriramulu worked on one OpenFaaS function, Docker Image and Deploying to Raspberry Pi (Multi-Node Cluster)
+* Murali Cheruvu worked on the CNN, One OpenFaaS function, Docker Image and Deploying Azure (Single-Node Cluster)
+* Anand Sriramulu worked on one OpenFaaS function, Docker Image and Deploying to Raspberry Pi (Multi-Node Cluster)
 
 ## Acknowledgement
 
