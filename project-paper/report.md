@@ -179,4 +179,4 @@ OpenFaaS facilitates clean design, development, deployment and support of the fu
 
 ## Acknowledgement
 
-The author would like to thank Dr. Gregor von Laszewski and the Teaching Assistants for their support and valuable suggestions. Author would also like to thank OpenFaas and the community of OpenFaaS for great collaboration and providing invaluable documentation and sample projects. 
+The author would like to thank Dr. Gregor von Laszewski and the Teaching Assistants for their support and valuable suggestions. Author would also like to thank authors listed in the bibliography along with OpenFaas and the community of OpenFaaS for great collaboration and providing invaluable documentation and sample projects. 
