@@ -12,6 +12,8 @@
 
 :o: 12-factor application development is not explained, thus the conclusion can not be understood.
 
+:o: this could actually contributed to the book, if it woudlnot be for the small issues pointed out here.
+
 ---
  
 Keywords: Cloud Foundry, Open Source, PaaS
