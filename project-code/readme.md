@@ -58,11 +58,35 @@ faas-cli deploy --image docker-img-faas-function --name faas-function
 
 ### OpenFaaS function can be tested using:
 
+#### Test Request : 1
+
+![faas - OpenFaas - tiger](function/data/tiger.jpg)
 ```
+Input:
 curl -X POST -H  \
   --data-binary @data/tiger.png \
-  "http://127.0.0.1:8080/function/fass-function" 
+  "http://127.0.0.1:8080/function/vggnet_predefined_classify" 
+
+Output:
+
+Predicted: [('n02129604', 'tiger', 0.92411584), ('n02123159', 'tiger_cat', 0.04635064), ('n02391049', 'zebra', 0.017654872)]
+
 ```  
+
+#### Test Request : 2
+
+![faas - OpenFaas - tiger](function/data/cow.jpg)
+```
+Input:
+curl -X POST -H  \
+  --data-binary @data/tiger.png \
+  "http://127.0.0.1:8080/function/resnet_predefined_classify" 
+
+Output:
+
+Predicted: [('n02403003', 'ox', 0.55445725), ('n03868242', 'oxcart', 0.36393312), ('n02109047', 'Great_Dane', 0.035532992)]
+```  
+  
 
 ### Push Our Docker Container Image with OpenFaaS Function
 
