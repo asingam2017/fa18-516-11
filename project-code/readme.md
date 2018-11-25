@@ -42,58 +42,131 @@ If there are any issues with the docker and/or OpenFaaS functions, we can reset 
 * **{open_faas_github_folder}/deploy_stack.sh** - to pull the latest code from openfaas GitHub
 
 
-## Build and deploy a serverless OpenFaaS function 
+## Build and deploy a serverless OpenFaaS function
 
-### Build Docker Container with OpenFaaS function and all the python dependencies
-
+### Get FaaS-CLI
 ```
-docker build -t docker-img-faas-function .
-Note: we will need to be in the OpenFaaS function parent fodler where dockerfile exists
+curl -sSL https://cli.openfaas.com | sudo sh
 ```
 
-## Deploy Docker Container Image with our OpenFaaS Function
+### Build, deploy and push to Docker Hub
 ```
-faas-cli deploy --image docker-img-faas-function --name faas-function
+cd fa18-516-11/project-code
+docker build -t faas-ressnet .
+
+faas-cli deploy --image faas-ressnet --name faas-ressnet
+
+docker tag faas-ressnet $anandid/faas-ressnet
+docker push $anandid/faas-ressnet
+
 ```
 
-### OpenFaaS function can be tested using:
+### Testing OpenFaaS function
 
 #### Test Request : 1
 
-![faas - OpenFaas - tiger](function/data/tiger.jpg)
+![faas - OpenFaas - tiger](data/tiger.jpg)
 ```
 Input:
 curl -X POST -H  \
   --data-binary @data/tiger.png \
-  "http://127.0.0.1:8080/function/vggnet_predefined_classify" 
+  "http://127.0.0.1:8080/function/faas-resnet" 
 
 Output:
 
-Predicted: [('n02129604', 'tiger', 0.92411584), ('n02123159', 'tiger_cat', 0.04635064), 
-('n02391049', 'zebra', 0.017654872)]
+Predicted: [('n02129604', 'tiger', 0.92411584), ('n02123159', 'tiger_cat', 0.04635064), ('n02391049', 'zebra', 0.017654872)]
 
 ```  
 
 #### Test Request : 2
 
-![faas - OpenFaas - tiger](function/data/cow.jpg)
+![faas - OpenFaas - tiger](data/cow.jpg)
 ```
 Input:
 curl -X POST -H  \
   --data-binary @data/tiger.png \
-  "http://127.0.0.1:8080/function/resnet_predefined_classify" 
+  "http://127.0.0.1:8080/function/faas-resnet" 
 
 Output:
 
-Predicted: [('n02403003', 'ox', 0.55445725), ('n03868242', 'oxcart', 0.36393312), 
-('n02109047', 'Great_Dane', 0.035532992)]
+Predicted: [('n02403003', 'ox', 0.55445725), ('n03868242', 'oxcart', 0.36393312), ('n02109047', 'Great_Dane', 0.035532992)]
 ```  
-  
 
-### Push Our Docker Container Image with OpenFaaS Function
+## Deploying to AWS
 
-* **Step 1:** Create a tag for our docker image using: **docker tag {img_name} {your_docker_hub_account_name}/{img_name}**
-* **Step 2:** Run **docker push your_docker_hub_account_name}/{img_name}**
+### Setup AWS Instance
 
+1. Purchased Spot Instance for Ubuntu 16.04, and with instance type we’ll use m4.xlarge
+2. Enabled Security group allowing ports 22, 31112, and 6443 for ingress
+3. Created a key-pair file, so that we can SSH in to the instance
+4. Test the Instance
 
+```
+ssh -i "faas.pem" ubuntu@ec2-18-191-176-209.us-east-2.compute.amazonaws.com
+```
 
+### Setting up Kubernetes on AWS
+
+1. Prep the machine by installing some necessary components. Run the following commands to enter superuser mode, install some necessary components from this gist, then exit back into the ubuntu user.
+
+```
+$ sudo su
+$ curl -sSL https://gist.githubusercontent.com/ericstoekl/1d4372e9398d9cec7ec028629b2c36e2/raw/6f03cf3481c10e3bcf01a495a273a975aaac8ced/gistfile1.sh | sh
+exit
+```
+
+2. Deploy Kubernetes
+
+```
+$ sudo kubeadm init --kubernetes-version stable-1.8
+```
+
+3. Networking layer for the cluster, to allow inter-pod communication
+
+```
+$ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+```
+
+4. To Allow container placement on the master node and confirm the cluster is running
+
+```
+$ kubectl taint nodes --all node-role.kubernetes.io/master-
+
+$ kubectl get all -n kube-system
+```
+
+### Deploying OpenFaas on Kuberetes using faas-netes
+
+1. Clone the node, Deploy the Whole Stack and deploy OpenFaas
+```
+$ git clone https://github.com/openfaas/faas-netes
+$ kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
+$ cd faas-netes && \
+kubectl apply -f ./yaml
+```
+
+2. Install the CLI, deploy samples
+
+```
+$ curl -sL https://cli.openfaas.com | sudo sh
+$ git clone https://github.com/openfaas/faas-cli
+```
+
+3. Pull docker image (OpenFaas functions)
+
+```
+docker pull anandid:faas-resnet
+```
+
+4. Deploy OpenFaas Functions 
+
+```
+faas-cli deploy --image anandid/faas-resnet --name faas-resnet --gateway http://18.191.176.209:31112
+```
+
+5. Test OpenFaas function
+
+```
+curl http://18.191.176.209:31112/function/faas-resnet --data-binary @data/tiger.png
+```
