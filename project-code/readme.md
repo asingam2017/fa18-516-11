@@ -65,7 +65,7 @@ docker push $anandid/faas-ressnet
 
 #### Test Request : 1
 
-![faas - OpenFaas - tiger](data/tiger.jpg)
+![faas - OpenFaas - tiger](function/data/tiger.jpg)
 ```
 Input:
 curl -X POST -H  \
@@ -80,7 +80,7 @@ Predicted: [('n02129604', 'tiger', 0.92411584), ('n02123159', 'tiger_cat', 0.046
 
 #### Test Request : 2
 
-![faas - OpenFaas - tiger](data/cow.jpg)
+![faas - OpenFaas - tiger](function/data/cow.jpg)
 ```
 Input:
 curl -X POST -H  \
