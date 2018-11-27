@@ -176,15 +176,13 @@ curl -sSL https://cli.openfaas.com | sudo sh
 ```
 
 #### Build, deploy and push to Docker Hub
-```
-cd fa18-516-11/project-code
-docker build -t faas-ressnet .
 
-faas-cli deploy --image faas-ressnet --name faas-ressnet
-
-docker tag faas-ressnet $anandid/faas-ressnet
-docker push $anandid/faas-ressnet
-
+```bash
+$ cd fa18-516-11/project-code
+$ docker build -t faas-ressnet .
+$ faas-cli deploy --image faas-ressnet --name faas-ressnet
+$ docker tag faas-ressnet $anandid/faas-ressnet
+$ docker push $anandid/faas-ressnet
 ```
 
 #### Testing OpenFaaS function
