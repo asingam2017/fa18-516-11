@@ -11,24 +11,21 @@ owner:
   weekly-log: https://github.com/cloudmesh-community/fa18-516-11/blob/master/notebook.md
 section:
   - title : DevOp - Continuous Improvement
-  - Keyword: DevOp, CI, CD, Continuous Improvement
-  - url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-ci.md 
-section:
+    keyword: DevOp, CI, CD, Continuous Improvement
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-ci.md 
   - title : DevOp - Azure Monitor
-  - Keyword: DevOp, CI, CD, Azure Monitor
-  - url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-azure-monitor.md 
-section:
+    keyword: DevOp, CI, CD, Azure Monitor
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-azure-monitor.md 
   - title : DevOp - AWS
-  - Keyword: DevOp, CI, CD, Amazon, AWS
-  - url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-aws.md       
-chapter:
-    - title: Cloud Foundry - Open Source PaaS
-    - keyword: Cloud Foundry
-    - url: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/cloud_foundry.md
-      
+    keyword: DevOp, CI, CD, Amazon, AWS
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/devops/devop-aws.md       
+paper:
+  - title: Cloud Foundry - Open Source PaaS
+    keyword: Cloud Foundry
+    url: https://github.com/cloudmesh-community/book/blob/master/chapters/cloud/cloud_foundry.md
 project:
-    - title: Explore OpenFaaS Development and Deployment Aspects
-      keyword: OpenFaaS, Serverless, Micro-Services, Function-as-a-service (FaaS)
-      url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-report/report.md 
-      code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/readme.md 
+  - title: Explore OpenFaaS Development and Deployment Aspects
+    keyword: OpenFaaS, Serverless, Micro-Services, Function-as-a-service (FaaS)
+    url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-report/report.md 
+    code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/readme.md 
      
