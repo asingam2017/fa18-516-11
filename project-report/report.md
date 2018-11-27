@@ -3,7 +3,7 @@
 | Murali Cheruvu, Anand Sriramulu
 | mcheruvu@iu.edu, asriram@iu.edu
 | Indiana University
-| hid: fa18-516-11, fa18-516-23
+| hid: fa18-516-11 fa18-516-23
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/readme.md)
 
