@@ -3,12 +3,8 @@ owner:
   firstname: "Murali"
   lastname: "Cheruvu"
   hid: "fa18-516-11"
-  firstname: "Anand"
-  lastname: "Sriramulu"
-  hid: "fa18-516-23"
-  community: "e516"
-  semester: "fa18"
-  weekly-log: https://github.com/cloudmesh-community/fa18-516-11/blob/master/notebook.md
+  semester: fa18
+  community: "e534"  
 section:
   - title : DevOp - Continuous Improvement
     keyword: DevOp, CI, CD, Continuous Improvement
@@ -28,4 +24,4 @@ project:
     keyword: OpenFaaS, Serverless, Micro-Services, Function-as-a-service (FaaS)
     url: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-report/report.md 
     code: https://github.com/cloudmesh-community/fa18-516-11/blob/master/project-code/readme.md 
-     
+    group: fa18-516-11 fa18-516-23
