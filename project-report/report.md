@@ -204,11 +204,11 @@ Predicted: [('n02129604', 'tiger', 0.92411584), ('n02123159', 'tiger_cat', 0.046
 
 ##### Test Request : 2
 
-![faas - OpenFaas - tiger](../project-code/function/data/cow.jpg)
+![faas - OpenFaas - cow](../project-code/function/data/cow.jpg)
 ```
 Input:
 curl -X POST -H  \
-  --data-binary @data/tiger.png \
+  --data-binary @data/cow.jpg \
   "http://127.0.0.1:8080/function/faas-resnet" 
 
 Output:
@@ -292,9 +292,75 @@ faas-cli deploy --image anandid/faas-resnet --name faas-resnet --gateway http://
 5. Test OpenFaas function
 
 ```
-curl http://18.191.176.209:31112/function/faas-resnet --data-binary @data/tiger.png
+curl http://18.191.176.209:31112/function/faas-resnet --data-binary @data/tiger.jpg
 ```
 
+
+#### Burn 3 Raspbery PI cluster thru cm-burn
+
+cmburn create --group g1 --names red[001-003] --key c:/users/anand/.ssh/id_rsa.pub --image 2018-06-27-raspbian-stretch.img --bootdrive I --rootdrive G --domain 192.168.1.254 --ip 192.168.1.[111-113]
+
+#### Steps to setup OpenFass in Rasberry PI
+
+1. Install Docker using the following utility script
+```
+$ curl -sSL https://get.docker.com | sh
+```
+Note: the above step can take between 2 to 5 minutes
+
+2. Run the following command to use Docker as non-root user
+```
+$ sudo usermod pi -aG docker
+```
+3. Change default Password
+```
+$ sudo passwd pi
+```
+4. Logout and log back to take this effect for the above 2 steps
+
+5. Setup docker swarm cluster
+```
+$ docker swarm init
+```
+Copy the output from the above command as like following, and need to be used in other PI nodes to join the cluster
+docker swarm join --token SWMTKN-1-25qnthaepgkcxx9qhfouh7yx0ht23od2shf44bw8tfphibsod8-b1c8o5ljjetm0vjkmamo3kk9k 192.168.1.111:2377
+
+6. Setup OpenFaas
+```
+$ git clone https://github.com/alexellis/faas/
+$ cd faas
+```
+7. Deploy sample functions
+```
+$ ./deploy_stack.armhf.sh
+```
+
+Other RPis will now be instructed by Docker Swarm to start pulling the Docker images from the internet and extracting them to the SD card. The work will be spread across all the RPis so that none of them are overworked.
+
+8. After few minutes, the following command will provide the status of the functions
+```
+$ watch 'docker service ls'
+```
+9. Testing a function to see the scheduled RPI for this function
+```
+$ docker service ps func_markdown
+```
+10. The Openfaas functions can be access via
+```
+http://192.168.1.111:8080
+```
+11. docker pull anandid/faas-resnet
+
+12. Deploy the image to the OpenFaas
+```
+$ faas-cli deploy --image anandid/faas-resnet --name faasresnet --gateway http://192.168.1.111:8080
+```
+
+13. Test OpenFaas function
+
+```
+curl http://192.168.1.111:8080/function/faasresnet --data-binary @data/tiger.jpg
+```
 
 
 #### Install Python Libraries
