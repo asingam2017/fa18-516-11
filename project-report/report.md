@@ -349,7 +349,11 @@ $ docker service ps func_markdown
 ```
 http://192.168.1.111:8080
 ```
-11. docker pull anandid/faas-resnet
+11. Pull docker image (OpenFaas functions)
+
+```
+docker pull anandid:faas-resnet
+```
 
 12. Deploy the image to the OpenFaas
 ```
