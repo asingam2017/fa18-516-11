@@ -305,7 +305,8 @@ $ python setup.py install
 $ cmburn create --group g1 --names red[001-003] --key c:/users/anand/.ssh/id_rsa.pub --image 2018-06-27-raspbian-stretch.img --bootdrive I --rootdrive G --domain 192.168.1.254 --ip 192.168.1.[111-113]
 ```
 
-![](images/pi_clusters.jpg)
+![Convolutional Neural Network (CNN) [@Chang2016]](images/cnn.png){#fig:CNN}
+![PI Cluster Case] [@pi_cluster_case](images/pi_clusters_case.jpg)
 
 #### Steps to setup OpenFass in Rasberry PI
 
