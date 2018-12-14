@@ -1,4 +1,4 @@
-# Explore OpenFaaS Development and Deployment Aspects :hand: fa18-516-11 fa18-516-23
+# Explore OpenFaaS Development and Deployment Aspects
 
 | Murali Cheruvu, Anand Sriramulu
 | mcheruvu@iu.edu, asriram@iu.edu
